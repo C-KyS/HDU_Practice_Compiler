@@ -1,2 +1,0 @@
-S -> apple | apply | application | ball | bat | bath | Xb
-X -> ab | ac | ad
