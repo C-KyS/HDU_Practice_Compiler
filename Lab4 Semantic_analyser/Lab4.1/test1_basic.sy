@@ -1,0 +1,10 @@
+// Basic arithmetic and variable declarations
+int main() {
+    int a = 10;
+    int b = 20;
+    int c = a + b * 2; // 10 + 40 = 50
+    const int d = 5;
+    int e = -a; // Unary operator
+    return c - d + e; // 50 - 5 - 10 = 35
+}
+

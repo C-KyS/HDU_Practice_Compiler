@@ -1,0 +1,21 @@
+
+int factorial(int n) {
+    if (n <= 1) return 1;
+    return n * factorial(n - 1);
+}
+
+void do_nothing() {
+    int x = 0;
+    return;
+}
+
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    do_nothing();
+    int res = factorial(5); // 120
+    int sum = add(res, 10);
+    return sum;
+}

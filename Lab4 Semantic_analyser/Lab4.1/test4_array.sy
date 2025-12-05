@@ -1,0 +1,14 @@
+int arr[5] = {1, 2, 3, 4, 5};
+int mat[2][3] = {{1, 2, 3}, {4, 5, 6}};
+
+int main() {
+    int local_arr[2] = {10, 20};
+    int x = arr[2]; // 3
+    int y = mat[1][2]; // 6
+    
+    local_arr[0] = x + y; // 9
+    
+    int z = arr[x - 1]; // arr[2] = 3
+    
+    return local_arr[0] + z; // 9 + 3 = 12
+}

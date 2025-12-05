@@ -1,0 +1,32 @@
+// Complex combination: Global vars, const, logic, complex expressions
+const int N = 10;
+int global_var = 100;
+
+int complex_calc(int a, int b) {
+    return (a * b) % N;
+}
+
+int main() {
+    int i = 0;
+    int result = 0;
+    
+    // Logical operators &&, ||, !
+    while (i < N && global_var > 0) {
+        if (i % 2 == 0 || i == 0) {
+            result = result + complex_calc(i, 2);
+        } else {
+            if (!(i == 5)) {
+                result = result + 1;
+            }
+        }
+        i = i + 1;
+        global_var = global_var - 1;
+    }
+    
+    /* 
+       Multi-line comment block
+       Checking final result
+    */
+    
+    return result;
+}
